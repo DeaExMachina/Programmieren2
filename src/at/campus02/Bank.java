@@ -2,9 +2,9 @@ package at.campus02;
 
 public class Bank {
     public static void main(String[] args) {
-        Account hansi = new Account("Hansi", "AT0115678458", "RZFHSDAF11", 0.0);
-        Account susi = new Account("Susi", "AT012854848532", "RZFNFIAZSB55", 0.0);
-        Account peter = new Account("Peter", "AT01687848735", "RZFJGNTBSU69", 0.0);
+        Account hansi = new Account("Hansi", "AT0115678458", "RZFHSDAF11");
+        Account susi = new Account("Susi", "AT012854848532", "RZFNFIAZSB55");
+        Account peter = new Account("Peter", "AT01687848735", "RZFJGNTBSU69");
 
         System.out.println(hansi.add(500));
 

@@ -2,16 +2,16 @@ package at.campus02;
 
 public class Account {
 
-    private String owner = null;
-    private String iban = null;
-    private String bic = null;
-    private double balance = 0.0;
+    private String owner;
+    private String iban;
+    private String bic;
+    private double balance;
 
-    public Account (String owner, String iban, String bic, double balance) {
+    public Account (String owner, String iban, String bic) {
         this.owner = owner;
         this.iban = iban;
         this.bic = bic;
-        this.balance = 0.0;
+        balance = 0.0;
     }
 
     public double add(double wert) {

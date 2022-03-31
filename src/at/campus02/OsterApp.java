@@ -6,5 +6,7 @@ public class OsterApp {
 
         dieter.aendereAnzahlEier(5);
         System.out.println(dieter.anzahlVersteckteEier);
+        dieter.aendereAnzahlEier();
+        System.out.println(dieter.anzahlVersteckteEier);
     }
 }

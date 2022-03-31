@@ -10,6 +10,7 @@ public class OsterApp {
         System.out.println(dieter.getAnzahlVersteckteEier());
         System.out.println(dieter.getName());
         System.out.println(marla.getName());
+        System.out.println(marla.getAnzahlVersteckteEier());
 
         //möchte ein Ei zur Anzahl der Eier dazuzählen
         dieter.setAnzahlVersteckteEier(dieter.getAnzahlVersteckteEier() + 1); //weil wir keine Variablennamen haben

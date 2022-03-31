@@ -5,8 +5,8 @@ public class Bruch {
     private int denominator;
 
     public Bruch (int numerator, int denominator) {
-        this.numerator = 0;
-        this.denominator = 0;
+        this.numerator = numerator;
+        this.denominator = denominator;
     }
 
     public int getNumerator() {
@@ -17,25 +17,22 @@ public class Bruch {
         return denominator;
     }
 
-//    public double toDecimal() {
-//        //liefert double als Dezimalzahl zurück
-//    }
+    public double toDecimal() {
+        //liefert double als Dezimalzahl zurück
+        return (double) numerator / denominator;
+    }
 
     public void print(){
         //gibt Ergebnis aus, z.B. als 5/7
         System.out.println(numerator + " / " + denominator);
     }
 
-    Bruch b1 = new Bruch(7, 6);
-    Bruch b2 = new Bruch(2, 5);
-    Bruch b3 = new Bruch(4, 16);
-
-
     public Bruch multiplicate(Bruch b2){
-        //b2 mit den eigenen Werten multiplizieren
-        b2.numerator = b2.numerator * b2.numerator;
-        b2.denominator = b2.denominator * b2.denominator;
-        return b2;
+        //b2 mit den eigenen Werten multiplizieren --> auf num und denom gespeichert
+        Bruch erg = new Bruch(numerator, denominator);
+        erg.numerator = erg.numerator * b2.numerator;
+        erg.denominator = erg.denominator * b2.denominator;
+        return erg;
     }
 
     public Bruch multiplicate(Bruch b2, Bruch b3) {

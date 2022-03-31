@@ -5,9 +5,13 @@ public class BruchTest {
 
     public static void main(String[] args) {
 
-        Bruch b1 = new Bruch(7, 6);
-        Bruch b2 = new Bruch(2, 5);
-        Bruch b3 = new Bruch(4, 16);
+        Bruch b1 = new Bruch(2, 4);
+        Bruch b2 = new Bruch(2, 8);
+
+        Bruch mult = b1.multiplicate(b2);
+        mult.print(); //weil wir auch eine Print-Funktion haben
+
+
 
 
 

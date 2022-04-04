@@ -1,6 +1,7 @@
 package at.campus02;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class ArrayListDemo {
     public static void main(String[] args) {
@@ -23,6 +24,12 @@ public class ArrayListDemo {
 
         //an welcher Stelle ist Karla?
         System.out.println(mauritius.indexOf(karla));
+
+        //verwenden wir doch mal einen Iterator, um über unsere Struktur zu iterieren
+        Iterator<Osterhasen> iter = mauritius.iterator();
+        while (iter.hasNext()){
+            System.out.println(iter.next());
+        }
 
         //Karl redet den ganzen Tag nur von der Jagd, wird von der Insel gejagt
         //(entfernen eines Objekts aus der Collection)

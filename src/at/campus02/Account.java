@@ -6,6 +6,12 @@ public class Account {
     private String iban;
     private String bic;
     private double balance;
+    private int accountID;
+    private static int uniqueID;
+
+    public int getAccountID() {
+        return accountID;
+    }
 
     public Account (String owner, String iban, String bic) {
         this.owner = owner;

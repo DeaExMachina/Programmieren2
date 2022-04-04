@@ -3,11 +3,18 @@ package at.campus02;
 public class Bruch {
     private int numerator;
     private int denominator;
+    static int bruchZaehler;
 
     public Bruch (int numerator, int denominator) {
         this.numerator = numerator;
         this.denominator = denominator;
     }
+
+    static int getNr (Bruch) {
+        return bruchNr;
+    }
+
+
 
     public int getNumerator() {
         return numerator;

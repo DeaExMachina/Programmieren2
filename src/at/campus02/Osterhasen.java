@@ -1,18 +1,34 @@
 package at.campus02;
 
 public class Osterhasen {
-
+    private static int haeschenZaehler = 1;
     private String name;
-    public int anzahlVersteckteEier;
+    private int anzahlVersteckteEier;
+    private int haeschenNummer;
+
 
     public Osterhasen(String name, int anzahlVersteckteEier) { //Konstruktor
         this.name = name;
         this.anzahlVersteckteEier = anzahlVersteckteEier;
+        haeschenNummer = haeschenZaehler++;
+    }
+
+    public int getHaeschenNummer() {
+        return haeschenNummer;
+    }
+
+    @Override
+    public String toString() {
+        return name + " versteckte " + anzahlVersteckteEier + " Eier";
     }
 
     public Osterhasen(String name){
         this.name = name;
         this.anzahlVersteckteEier = 0;
+        haeschenNummer = haeschenZaehler++;
+        //jeder Hase soll eine eigene eindeutige Nummer haben (wegen der Steuer)
+        //alternativer Zugriff oder wenn es nicht private ist:
+        //Osterhasen.haeschenZaehler;
     }
 
 //    public void aendereAnzahlEier(int anzahlVersteckteEier) {

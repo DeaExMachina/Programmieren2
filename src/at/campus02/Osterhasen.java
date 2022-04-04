@@ -11,6 +11,7 @@ public class Osterhasen {
     public Osterhasen(String name, int anzahlVersteckteEier, Hasenreligion glaube) { //Konstruktor
         this.name = name;
         this.anzahlVersteckteEier = anzahlVersteckteEier;
+        persoenlicherGlaube = glaube;
         haeschenNummer = haeschenZaehler++;
     }
 
@@ -20,7 +21,7 @@ public class Osterhasen {
 
     @Override
     public String toString() {
-        return name + " versteckte " + anzahlVersteckteEier + " Eier";
+        return name + " versteckte " + anzahlVersteckteEier + " Eier und glaubt an " + persoenlicherGlaube;
     }
 
     public Osterhasen(String name){

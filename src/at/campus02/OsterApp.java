@@ -2,7 +2,7 @@ package at.campus02;
 
 public class OsterApp {
     public static void main(String[] args) {
-        Osterhasen dieter = new Osterhasen("Dieter (formerly known as Hansi)", 10, Hasenreligion.EXTRABUNTE_OSTEREIER);
+        Osterhasen dieter = new Osterhasen("Dieter (formerly known as Hansi)", 10, Hasenreligion.ZUR_HEILIGEN_KAROTTE);
         Osterhasen marla = new Osterhasen("Marla");
 
 //        dieter.setAnzahlVersteckteEier(5);

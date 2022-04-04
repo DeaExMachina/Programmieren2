@@ -10,6 +10,8 @@ public class BruchTest {
 
         Bruch mult = b1.multiplicate(b2);
         mult.print(); //weil wir auch eine Print-Funktion haben
+        System.out.println(b1);
+        System.out.println(Bruch.getBruchNr()); //Klassenname verwenden!
 
 
 

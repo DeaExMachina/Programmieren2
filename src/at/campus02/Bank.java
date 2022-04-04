@@ -17,12 +17,16 @@ public class Bank {
 
         for (int x = 0; x < accounts.length; x++) {
             System.out.println(accounts[x].getBalance());
+            System.out.println(accounts[x]);
         }
+
 
         //oder mit for-each-loop:
         // for (Account i : accounts) {
         // System.out.println(i.getBalance());
         // }
+
+
 
     }
 }

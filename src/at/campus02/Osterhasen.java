@@ -5,9 +5,10 @@ public class Osterhasen {
     private String name;
     private int anzahlVersteckteEier;
     private int haeschenNummer;
+    private Hasenreligion persoenlicherGlaube;
 
 
-    public Osterhasen(String name, int anzahlVersteckteEier) { //Konstruktor
+    public Osterhasen(String name, int anzahlVersteckteEier, Hasenreligion glaube) { //Konstruktor
         this.name = name;
         this.anzahlVersteckteEier = anzahlVersteckteEier;
         haeschenNummer = haeschenZaehler++;
@@ -26,6 +27,7 @@ public class Osterhasen {
         this.name = name;
         this.anzahlVersteckteEier = 0;
         haeschenNummer = haeschenZaehler++;
+        persoenlicherGlaube = Hasenreligion.LANGE_OHREN_ZEUGEN;
         //jeder Hase soll eine eigene eindeutige Nummer haben (wegen der Steuer)
         //alternativer Zugriff oder wenn es nicht private ist:
         //Osterhasen.haeschenZaehler;

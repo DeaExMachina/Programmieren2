@@ -17,7 +17,6 @@ public class ArrayListDemo {
         mauritius.add(uschi);
 
         //alle durchlaufen:
-
         for (int h = 0; h < mauritius.size(); h++) {
             System.out.println(mauritius.get(h));
         }

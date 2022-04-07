@@ -19,6 +19,27 @@ public class SerialKillers {
         }
 
         System.out.println(serialNicknames.add("Ted Bundy")); //return "false", weil Element bereits enthalten ist
-    }
 
+        serialNicknames.add("Edmund Kemper");
+        serialNicknames.add("Jack the Ripper");
+        serialNicknames.add("Edmund Kemper");
+
+        for(String s : serialNicknames) {
+            System.out.println(s);
+        }
+
+        // serialNicknames.retain
+        //zweites Set nur für AmerikanerInnen
+        HashSet<String> americanSerialKiller = new HashSet<>();
+        americanSerialKiller.add("Ted Bundy");
+        americanSerialKiller.add("Edmund Kemper");
+        americanSerialKiller.add("Hannibal Lecter");
+
+        //entfernt alle Elemente, die nicht in americanSerialKiller sind, aus serialNicknames
+        serialNicknames.retainAll(americanSerialKiller);
+        System.out.println("----------");
+        for(String s : serialNicknames) {
+            System.out.println(s);
+        }
+    }
 }

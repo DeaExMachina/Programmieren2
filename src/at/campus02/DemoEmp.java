@@ -7,7 +7,7 @@ public class DemoEmp {
 
         Employee hansi = new Employee(1, "Hansi Huber", 1500.60, "Accounting");
         Employee susi = new Employee(2, "Susi Sonnenschein", 2410.79, "Management");
-        Employee willi = new Employee(3, "Willi Wilson", 2222.22, "Marketing");
+        Employee willi = new Employee(3, "Willi Wilson", 2222.22, "Management");
 
         EmployeeManager mgr = new EmployeeManager();
 
@@ -18,6 +18,10 @@ public class DemoEmp {
         System.out.println(mgr.findByEmpNumber(3));
         System.out.println(mgr.findByDepartment("Management"));
         System.out.println(mgr.findByMaxSalary());
+
+        //Vergleich, ob beide in der gleichen Abteilung arbeiten
+        System.out.println(susi.compareDepartment(willi));
+        System.out.println(hansi.compareDepartment(susi));
 
     }
 }

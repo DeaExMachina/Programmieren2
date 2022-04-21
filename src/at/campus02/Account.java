@@ -1,5 +1,7 @@
 package at.campus02;
 
+import java.util.Objects;
+
 public class Account {
 
     private String owner;
@@ -45,5 +47,18 @@ public class Account {
                 ", balance=" + balance +
                 ", accountID=" + accountID +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Account account = (Account) o;
+        return accountID == account.accountID;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(accountID);
     }
 }

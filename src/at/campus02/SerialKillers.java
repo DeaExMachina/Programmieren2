@@ -1,6 +1,8 @@
 package at.campus02;
 
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.ArrayList;
 
 public class SerialKillers {
     //als angehende neue Serienkillerin (damit sind keine bösartigen Personen gemeint, sondern solche, die gern
@@ -41,5 +43,30 @@ public class SerialKillers {
         for(String s : serialNicknames) {
             System.out.println(s);
         }
+
+        //in einer HashMap wollen wir alle Opfer der Serienkiller speichern
+
+        HashMap<String, ArrayList<String>> opfer = new HashMap<>();
+        //wenn ich hier (und nicht in der for-Schleife) meine ArrayList erzeuge, habe ich insgesamt nur eine
+        //ArrayList und würde jedem Serienkiller dieselbe Liste zuweisen (das kann nicht richtig sein, weil ein
+        //Opfer ja nicht mehrmals ermordet werden kann)
+
+        for(String crazyAmerican : americanSerialKiller) {
+            ArrayList<String> o = new ArrayList<>();
+            o.add("Opfer 1");
+            o.add("Opfer 2");
+            o.add("Opfer 3");
+
+            opfer.put(crazyAmerican, o); //jeder Serienkiller hat eine eigene Opferliste
+        }
+
+        //wie kann man Opfer hinzufügen? --> Indem wir es in die Opferliste packen
+        //Wie kommen wir zur Opferliste?
+        //Ted Bundy soll ein 4. Opfer bekommen
+
+        ArrayList<String> opfi = opfer.get("Ted Bundy");
+
+        opfi.add("Opfer 4");
+
     }
 }

@@ -7,15 +7,15 @@ public class Hase {
         this.name = name;
     }
 
-    public void schlafen (String name){
+    public void schlafen (){
         System.out.println(name + " schläft.");
     }
 
-    public void hoppeln (String name){
+    public void hoppeln (){
         System.out.println(name + " hoppelt.");
     }
 
-    public void fressen (String name){
+    public void fressen (){
         System.out.println(name + " frisst.");
     }
 

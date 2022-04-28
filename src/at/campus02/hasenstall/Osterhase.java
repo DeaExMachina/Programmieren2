@@ -12,6 +12,6 @@ public class Osterhase extends Hase {
 
     @Override
     public void hoppeln(){
-        System.out.println(name + " hoppelt über grüne Wiesen.");
+        System.out.println(name + " hoppelt über grüne, österliche Wiesen.");
     }
 }

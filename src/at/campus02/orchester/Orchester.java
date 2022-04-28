@@ -17,7 +17,7 @@ public class Orchester {
         return summe;
     }
 
-    public void addInstrument(Instrument i){ //this is UPCASTING!
+    public void addInstrument(Instrument i){
         or.add(i);
     }
 }

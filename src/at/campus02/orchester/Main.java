@@ -7,7 +7,7 @@ public class Main {
         Orgel o = new Orgel("Orgelito", 14);
 
         Orchester or = new Orchester();
-        or.addInstrument(g); //this is UPCASTING! --> Instrument verlangt, aber Gitarre geliefert (= spezielles Instrument)
+        or.addInstrument(g);
         or.addInstrument(f);
         or.addInstrument(o);
         or.playAll();

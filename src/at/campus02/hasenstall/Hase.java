@@ -1,7 +1,7 @@
 package at.campus02.hasenstall;
 
-public class Hase {
-    String name;
+public class Hase implements GoesToParty{
+    public String name;
 
     public Hase(String name) {
         this.name = name;
@@ -19,4 +19,8 @@ public class Hase {
         System.out.println(name + " frisst.");
     }
 
+    @Override
+    public void party(String drink, String cake) {
+        System.out.println(name + " goes to a birthday party and drinks " + drink + " after eating " + cake);
+    }
 }

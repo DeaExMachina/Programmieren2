@@ -1,5 +1,7 @@
 package at.campus02.hasenstall;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -73,6 +75,16 @@ public class Main {
         wh = (Weihnachtshase) h;
         h.hoppeln();
         wh.hoppeln();
+
+        // h.party("Schnaps", "Sachertorte");
+
+        //Interface example
+        ArrayList<GoesToParty> partyPeople = new ArrayList<>();
+        partyPeople.add(wh);
+
+        for (GoesToParty p : partyPeople){
+            p.party("Schnaps", "Sachertorte");
+        }
 
 
 

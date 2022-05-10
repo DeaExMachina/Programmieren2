@@ -1,5 +1,9 @@
 package at.campus02;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class DogParty {
     public static void main(String[] args) {
         Dog scooby = new Dog("Scooby Doo", "black", 40, true);
@@ -15,5 +19,18 @@ public class DogParty {
         Beagle hansi = new Beagle("Hansi", "blue", 80, false, "small children");
         System.out.println(hansi);
         hansi.bark();
+
+        List<Dog> dogs = new ArrayList<>();
+        dogs.add(scooby);
+        dogs.add(hansi);
+        dogs.add(max);
+
+        System.out.println(dogs);
+        Collections.sort(dogs);
+        System.out.println(dogs);
+        //auch der Beagle kann mitsortiert werden, weil er auch ein Hund ist
+
+
+
     }
 }

@@ -1,6 +1,6 @@
 package at.campus02;
 
-public class Dog {
+public class Dog implements Comparable<Dog> {
     public String name;
     public String eyeColor;
     public int weight;
@@ -20,25 +20,37 @@ public class Dog {
         this.appreciatesOtherDogs = appreciatesOtherDogs;
     }
 
-    public void bark(){
+    public void bark() {
         System.out.println(name + " barks");
     }
 
     @Override
     public String toString() {
-       String text;
-       if(appreciatesOtherDogs){
-           text = name + " admires other dogs with their sparkly " + eyeColor + " eyes.";
-       }
-       else {
-           text = name + " barks until all the other dogs leave the party.";
-       }
+        String text;
+        if (appreciatesOtherDogs) {
+            text = name + " admires other dogs with their sparkly " + eyeColor + " eyes.";
+        } else {
+            text = name + " barks until all the other dogs leave the party.";
+        }
 
-       return text;
+        return text;
     }
 
-    public void eat(){
+    public void eat() {
         System.out.println(name + " eats");
         bark();
+    }
+
+
+    @Override
+    public int compareTo(Dog o) {
+        if (this.weight < o.weight) {
+            return -1;
+        }
+        if (this.weight > o.weight) {
+            return 1;
+        }
+        return 0;
+
     }
 }

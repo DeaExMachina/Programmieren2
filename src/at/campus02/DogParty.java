@@ -20,15 +20,21 @@ public class DogParty {
         System.out.println(hansi);
         hansi.bark();
 
+        Dog hansi2 = new Dog("Hansi", "red", 100, false);
+
         List<Dog> dogs = new ArrayList<>();
         dogs.add(scooby);
         dogs.add(hansi);
         dogs.add(max);
+        dogs.add(hansi2);
 
         System.out.println(dogs);
         Collections.sort(dogs);
         System.out.println(dogs);
         //auch der Beagle kann mitsortiert werden, weil er auch ein Hund ist
+
+        //sortieren anhand zweier Kriterien: Name und Gewicht
+
 
 
 

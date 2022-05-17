@@ -1,6 +1,7 @@
 package at.campus02.sortieren;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class SortierApp {
     public static void main(String[] args) {
@@ -18,6 +19,10 @@ public class SortierApp {
 
         System.out.println(Arrays.toString(mArr));
         Arrays.sort(mArr);
+        System.out.println(Arrays.toString(mArr));
+
+        //now with Comparator
+        Arrays.sort(mArr, new ZunameKomparator());
         System.out.println(Arrays.toString(mArr));
     }
 

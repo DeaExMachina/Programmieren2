@@ -44,8 +44,15 @@ public class Dog implements Comparable<Dog> {
 
     @Override
     public int compareTo(Dog o) {
+        //1.: Name
+        int ergFirst = this.name.compareTo(o.name);
+        if (ergFirst != 0){
+            return ergFirst;
+        }
+
+        //2.: Gewicht (Wenn Name nicht eindeutig ist)
         if (this.weight < o.weight) {
-            return -1;
+            return -1; //this ist weiter vorn als other
         }
         if (this.weight > o.weight) {
             return 1;

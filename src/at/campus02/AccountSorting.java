@@ -1,6 +1,8 @@
 package at.campus02;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class AccountSorting {
     public static void main(String[] args) {
@@ -17,5 +19,10 @@ public class AccountSorting {
         allAccounts.add(a1);
         allAccounts.add(a2);
         allAccounts.add(a3);
+
+        Collections.sort(allAccounts);
+//        Collections.sort(allAccounts); --> sollte eigentlich funktionieren...
+//        System.out.println(allAccounts);
+
     }
 }
